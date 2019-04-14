@@ -1,0 +1,397 @@
+*,*:after,*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1.7;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .45), rgba(0, 0, 0, .7)), url("images/brand1.jpg");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.navigation-bar {
+	width: auto;
+	background-color: rgba(0, 0, 0, .6);
+	height: auto;
+	padding: 1.5rem 1.5rem;
+	position: absolute;
+	top: 10%;
+	right: 7%;
+}
+
+.navigation-bar a {
+	padding: 1rem 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+    letter-spacing: 1.8px;
+    transition: all .2s;
+}
+
+.navigation-bar a:not(:last-child) {
+	margin-right: .8rem;
+}
+
+.navigation-bar a:hover {
+	color: crimson;
+}
+
+.navigation-bar a::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background-color: aqua;*/
+	top: 0;
+	left: 0;
+	transition: transform .35s;
+	/*border-top: 1px solid rgba(0, 0, 0, .25);
+	border-left: 1px solid rgba(0, 0, 0, .25);*/
+	transform: scale(0,1);
+}
+
+.navigation-bar a:hover::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background-color: aqua;*/
+	top: 0;
+	left: 0;
+	border-top: 1px solid rgba(255, 255, 255, .45);
+	border-bottom: 1px solid rgba(255, 255, 255, .45);
+	transform: scale(1,1);
+}
+
+.logo-box {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 450px;
+	height: 180px;
+	/*background-color: #eee;*/
+}
+
+.logo-primary-text {
+	font-family: 'Righteous', cursive;
+	font-weight: 650;
+	font-size: 5.6rem;
+	line-height: 1;
+	letter-spacing: 1.8px;
+	color: #fff;
+}
+
+.logo-secondary-text {
+	font-family: 'Lobster', cursive;
+    font-weight: 200;
+    color: crimson;
+    letter-spacing: 2.5px;
+    font-size: 3.4rem;
+}
+
+.logo-sub-text {
+	font-size: 1.6rem;
+    font-family: arial;
+    color: #ccc9c9;
+    letter-spacing: 4px;
+}
+
+/* sign up box */
+
+.signUp-box {
+	width: 550px;
+	height: auto;
+	padding: 1rem;
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	font-family: 'Open Sans', sans-serif;
+	/*background-color: tomato;*/
+}
+
+.heading-tartiary {
+	font-size: 3.5rem;
+	font-weight: 650;
+	line-height: 1;
+}
+
+.mb-5 {
+	margin-bottom: 5rem;
+}
+
+.mr-1 {
+	margin-right: 1rem;
+}
+
+.mb-2{
+	margin-bottom: 2.5rem;
+}
+
+.border-capsule {
+    border-radius: 100px;
+}
+
+.border-black {
+    border: 1px solid rgba(0, 0, 0, .35);
+}
+
+.border-white {
+	border: 1px solid rgba(255, 255, 255, .2);
+}
+.btn {
+	text-decoration: none;
+	padding: 1rem 1.9rem;
+	font-size: 2rem;
+	transition: all .2s ease-out;
+}
+
+.btn-sm {
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	font-size: 1.3rem;
+	transition: all .2s ease-out;
+}
+
+.btn-primary:hover {
+	background-color: #fff;
+	color: crimson;
+}
+
+.btn-sm-primary:hover{
+	background-color: #f7f7f7;
+	color: crimson;
+	border: 1px solid rgba(0, 0, 0, .35);
+}
+
+.btn-secondary:hover {
+	background-color: crimson;
+	color: #fff;
+}
+
+.btn-sm-secondary:hover {
+	background-color: crimson;
+	color: #fff;
+	border: none;
+}
+
+
+.danger {
+	background-color: crimson;
+}
+
+.white {
+	background-color: white;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/*  PRODUCT section  */
+
+
+.product-section {
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 20rem 0rem
+}
+
+.heading-primary {
+	font-size: 3.5rem;
+	text-align: center;
+	font-family: 'Righteous', cursive;
+	/*background-color: aqua;*/
+	margin-bottom: 5rem;
+	letter-spacing: 3px;
+	color: crimson;
+}
+
+.row {
+	/*background-color: #4BCFFA;*/
+	width: 114rem;
+	margin: 0 auto;
+	height: auto; 
+	font-size: 1.6rem;
+	font-family: 'Lato' sans-serif;
+
+}
+
+.row:not(:last-child) {
+	margin-bottom: 6rem;
+}
+
+.row::After {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.box {
+	position: relative;
+	float: left;
+	/*background-color: #26ae60;*/
+	width: calc((114rem/3) - (4rem));
+	height: auto;
+	margin: 0rem 2rem;
+	/*border-radius: 10px;*/
+    box-shadow: 0px .7rem 1.4rem rgba(0, 0, 0, .35);
+    transition: transform .3s ease-in;
+}
+
+.box:hover {
+    transform: translateY(-5px) scale(1.03);
+    tra
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	height: 30rem;
+	/*background-image: url('https://source.unsplash.com/random/340*300');*/
+	background-color: #fff;
+}
+
+.search-box {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	top: 0;
+	right: 0;
+	transition: all .3s ease-out;
+	z-index: 1;
+}
+
+.search-box-boot {
+	background-image: url('images/boot2.jpg');
+}
+
+.search-box-jersey {
+	background-image: url('images/jersey1.jpg');
+}
+
+.search-box-perfume {
+	background-image: url('images/perfume1.jpg');
+}
+
+.search-box-underwear {
+	background-image: url('images/underwear1.jpg');
+}
+
+.search-box-sock {
+	background-image: url('images/sock1.jpg');
+}
+
+.search-box-jacket {
+	background-image: url('images/jacket1.jpg');
+	background-position: top;
+}
+
+.box:hover .search-box {
+	width: 20%;
+	height: 20%;
+	right: 40%;
+	top: 2%;
+	border-radius: 10rem;
+}
+
+.card-body {
+	width: 100%;
+	height: 0;
+	position: absolute;
+	padding: 1.8rem;
+	/*background-color: aqua;*/
+	z-index: 1;
+	top: 25%;
+	transition: transform .3s ease-out;
+	transform: scale(1,0);
+	opacity: 0;
+	text-align: justify;
+}
+
+.box:hover .card-body {
+	transform: scale(1,1);
+	height: auto;
+	opacity: 1;
+}
+
+/*  Quotes Section  */
+/* =================== */
+
+.quotes-section {
+	width: 100%;
+	padding: 15rem 0;
+	/*background-color: #ececec;*/
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .65), rgba(0, 0, 0, .8)), url("images/banner2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*height:350px;*/
+}
+
+.quote1 {
+	font-size: 3rem;
+	font-family: 'Comfortaa', cursive;
+	margin-bottom: 3rem;
+	font-weight: 200;
+}
+
+.open-quote-icon {
+	font-size: 3.5rem;
+	margin-right: 2rem;
+	color: #f3f3f3c7;
+}
+
+.close-quote-icon {
+	font-size: 3.5rem;
+	margin-left: 2rem;
+	color: #f3f3f3c7;
+}
+
+.quote2 {
+	font-size: 3rem;
+	float: right;
+	font-family: 'Comfortaa', cursive;
+    margin-bottom: 3rem;
+    color: crimson;
+    font-weight: 200;
+}
+
+.quote3 {
+	font-size: 3rem;
+	float: left;
+	font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+}
